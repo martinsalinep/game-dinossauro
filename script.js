@@ -54,7 +54,7 @@ function createCactus() {
     } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
       clearInterval(leftTimer);
       isGameOver = true;
-      document.body.innerHTML = '<h1 class="gameOver">Game Over</h1>';
+      document.body.innerHTML = '<div class="gameOver"> <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hliaii.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player> <h1> Game Over </h1> <button class="btn" onclick="window.location.reload();"> Try again </button> </div>';
     } else {
       cactusPosition -= 10;
       cactus.style.left = cactusPosition + 'px';
